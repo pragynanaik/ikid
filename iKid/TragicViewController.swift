@@ -34,12 +34,12 @@ class TragicViewController: UIViewController {
             joke?.view.superview != nil {
             UIView.setAnimationTransition(.flipFromRight, for: view, cache: true)
             answer.view.frame = view.frame
-            tragicLabel.text = "third"
+            tragicLabel.text = "What did the tired toilet say to the plunger?"
             switchViewController(joke, to: answer)
         } else {
             UIView.setAnimationTransition(.flipFromLeft, for: view, cache: true)
             joke.view.frame = view.frame
-            tragicLabel.text = "Answer"
+            tragicLabel.text = "I'm flushed :("
             switchViewController(answer, to: joke)
         }
         
